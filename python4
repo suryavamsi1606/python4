@@ -1,0 +1,7 @@
+p=int(input())
+t=int(input())
+r=int(input())
+SI=p*t*r/100
+R=SI+p
+emi=R/t
+print("EMI is",emi)

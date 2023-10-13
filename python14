@@ -1,0 +1,33 @@
+Shoes=1000
+Belt=1500
+Watch=2000
+print("********Welcome to Inorbit Mall********")
+cname=input("Enter Customer name:")
+cphno=input("Enter Phone number:")
+Sp=int(input("Enter no of Shoes pairs:"))
+Bp=int(input("Enter no of Belts:"))
+Wp=int(input("Enter no of Watches:"))
+pc=input("Enter promo code:")
+bill=(Shoes*Sp)+(Belt*Bp)+(Watch*Wp)
+if pc=="DASARA" or pc=="dasara":
+    disc=bill*50/100
+elif  pc=="SUNDAY" or pc=="sunday":
+    disc=bill*40/100
+elif bill>=5000:
+    disc=bill*30/100
+elif bill>=2500:
+    disc=bill*20/100
+elif bill>=1000:
+    disc=bill*10/100
+else:
+    disc=bill*5/100
+tbill=bill-disc
+GST=tbill*12/100
+Obill=tbill+GST
+print("Customer name:",cname)
+print("Customer Phone Number:",cphno)
+print("Bill:",bill)
+print("Discount:",disc)
+print("GST 12%:",GST)
+print("Bill to be paid:",Obill)
+print("*****Thank you!Visit Again*****")

@@ -1,0 +1,52 @@
+A=int(input())
+tt,fh,th,oh,ft,tw,te,fi,two,one=0,0,0,0,0,0,0,0,0,0
+while(A>=2000):
+    tt=tt+1
+    A=A-2000
+while(A>=500):
+    fh=fh+1
+    A=A-500
+while(A>=200):
+    th=th+1
+    A=A-200
+while(A>=100):
+    oh=oh+1
+    A=A-100
+while(A>=50):
+    ft=ft+1
+    A=A-50
+while(A>=20):
+    tw=tw+1
+    A=A-20
+while(A>=10):
+    te=te+1
+    A=A-10
+while(A>=5):
+    fi=fi+1
+    A=A-5
+while(A>=2):
+    two=two+1
+    A=A-2
+while(A>=1):
+    one=one+1
+    A=A-1
+if tt>0:
+    print('2000:',tt)
+if fh>0:
+    print('500:',fh)
+if th>0:
+    print('200:',th)
+if oh>0:
+    print('100:',oh)
+if ft>0:
+    print('50:',ft)
+if tw>0:
+    print('20:',tw)
+if te>0:
+    print('10:',te)
+if fi>0:
+    print('5:',fi)
+if two>0:
+    print('2:',two)
+if one>0:
+    print('1:',one)

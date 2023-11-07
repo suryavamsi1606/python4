@@ -1,0 +1,12 @@
+p=int(input())
+sum=0
+for s in range(1,p+1):
+    c=0
+    for i in range(1,s+1):
+        if s%i==0:
+            c=c+1
+        if c>3:
+            break
+    if c==2:
+        sum=sum+1
+print(sum)
